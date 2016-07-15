@@ -2,9 +2,8 @@
 <html lang="en" ng-app="crudCostos">
 <head>
 	<meta charset="UTF-8">
-	<title>Costos de Medios</title>
+	<title>Nuevo Costo</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 	<script src="js/main.js"></script>
@@ -14,7 +13,7 @@
 		}
 	</style>
 </head>
-<body ng-controller="crudController" class="container">
+<body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container">
   			<ul class="nav navbar-nav">
@@ -23,12 +22,18 @@
     			</ul>
     		<form class="navbar-form navbar-right">
     			<div class="form-group">
-    				<input type="text" class="form-control" placeholder="Buscar" ng-model="buscador">
+    				<input type="text" class="form-control" placeholder="Buscar">
     			</div>
     		</form>
  		 </div>
 	</nav>
-	<div class="body-container" ng-include="view">
-	</div>
+	<div class="body-container">
+		<form>
+			<div class="form-group">
+				<label>Periodico</label>
+			</div>
+		</form>
+
+	</div>	
 </body>
 </html>
